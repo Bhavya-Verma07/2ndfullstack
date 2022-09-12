@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@500&family=Dancing+Script:wght@400;500&family=Open+Sans&family=Qwitcher+Grypen:wght@400;700&family=Satisfy&display=swap');
+
+
+.div1
+{
+  text-align: center;
+background-color:  rgb(11, 237, 188);
+height: 150px;
+width: 100%;
+}
+.div2
+{
+  padding-top: 30px;
+  font-size: 30px;
+}
+label{
+  padding-right: 10px;
+  text-align: center;
+  color: brown;
+  size: 30px;
+}
+input{
+  block-size: 40px;
+  text-align: center;
+  font-family: fantasy;
+  color: darkblue;
+}
+
+.myfont{
+ font-family:"Cormorant SC" ;
+ color: rgb(89, 94, 103);
+ font-size: 40px;
+ text-align: center;
+}
+
+#nav{
+  background-color: rgb(11, 237, 188);
+}
+
+.card-text{
+  font-family: "Open Sans";
+}
+
+
+
+/* body{
+  background-color:#012d0d;
+} */
+
