@@ -31,7 +31,7 @@ const Form2 = () => {
 
   return (
     <>
-    <h2 className="myfont">Place your thoughts here</h2>
+    <h2 className="myfont">What's on your mind?</h2>
       <form>
         <div className="form-group">
           <label for="exampleFormControlSelect1">Content type</label>
@@ -53,6 +53,7 @@ const Form2 = () => {
             onChange={(e) => setcategory(e.target.value)}
             type="text"
             className="form-control"
+            style={{height:"10px"}}
           />
         </div>
         <div className="form-group">

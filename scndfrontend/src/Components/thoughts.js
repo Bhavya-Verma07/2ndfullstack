@@ -16,7 +16,7 @@ const Thoughts = () => {
   }, []);
   return (
     <>
-    <h2 class="myfont">What's on your mind?</h2>
+    <h2 class="myfont">Place your thoughts here</h2>
       {quotes.map((candidate, i) => {
         return (
           <>

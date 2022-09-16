@@ -13,7 +13,7 @@ const AnimalNews = () => {
 
   useEffect(() => {
     getnewss();
-  }, []);
+  }, []); //api/gettingnews
 
 
   return (

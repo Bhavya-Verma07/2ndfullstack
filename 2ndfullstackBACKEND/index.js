@@ -27,8 +27,19 @@ app.post("/api/savequotes", async (req, res) => {
 //getting thoughts
 app.get("/api/gettingquotes", async (req, res) => {
   try {
-    const quotesdata = await CONTENT_MODEL.find().sort({ createdAt: -1 });
+    const quotesdata = await CONTENT_MODEL.find({type:"quotes"}).sort({ createdAt: -1 });
     return res.json({ data: quotesdata, success: true });
+  } catch (error) {
+    console.log(error);
+    res.status(400).json({ success: false, error: error.message });
+  }
+});
+
+//getting news
+app.get("/api/gettingnewss", async (req, res) => {
+  try {
+    const newzdata = await CONTENT_MODEL.find({type:"news"}).sort({ createdAt: -1 });
+    return res.json({ data: newzdata, success: true });
   } catch (error) {
     console.log(error);
     res.status(400).json({ success: false, error: error.message });
