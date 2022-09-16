@@ -34,13 +34,15 @@ const Card1 = ({ category, example, description, current }) =>
   };
   return (
     <>
-      <div className="container-fluid">
+      <div className="container-fluid my-3 mx-5" style={{width:"100%"}}>
         <div className="row">
           <div className="'col-md-4 col-10 col-xxl-4 mx-auto">
             <div
               className="card"
               style={{ width: "18rem", backgroundColor: colours[current % 6] }}
             >
+              
+               
               <div className="card-body">
                 <h5 className="card-title">{category}</h5>
                 <h6 className="card-subtitle mb-2 text-muted">{example}</h6>
@@ -60,8 +62,9 @@ const Card1 = ({ category, example, description, current }) =>
         <DeleteIcon/>
         </button>
                 </div>
-                </div>
               </div>
+            
+            </div>
             </div>
       </div>
     </>

@@ -33,12 +33,12 @@ const Form2 = () => {
     <>
     <h2 className="myfont">Place your thoughts here</h2>
       <form>
-        <div class="form-group">
+        <div className="form-group">
           <label for="exampleFormControlSelect1">Content type</label>
           <select
             value={type}
             onChange={(e) => settype(e.target.value)}
-            class="form-control"
+            className="form-control"
             id="exampleFormControlSelect1"
           >
             <option value=""> Select Content type </option>
@@ -46,32 +46,32 @@ const Form2 = () => {
             <option value="quotes">Thoughts</option>
           </select>
         </div>
-        <div class="form-group">
+        <div className="form-group">
           <label for="exampleInputEmail1">Name</label>
-          <input
+          <textarea
             value={category}
             onChange={(e) => setcategory(e.target.value)}
-            type="email"
-            class="form-control"
+            type="text"
+            className="form-control"
           />
         </div>
-        <div class="form-group">
+        <div className="form-group">
           <label for="exampleInputPassword1">Quote</label>
           <textarea
             value={example}
             onChange={(e) => setexample(e.target.value)}
             type="text"
-            class="form-control"
+            className="form-control"
             placeholder="Quote here"
           />
         </div>
-        <div class="form-group">
+        <div className="form-group">
           <label for="exampleInputPassword1">Your thoughts </label>
           <textarea
             value={description}
             onChange={(e) => setdescription(e.target.value)}
             type="text"
-            class="form-control"
+            className="form-control"
             placeholder="Enter description"
           />
         </div>
@@ -79,7 +79,7 @@ const Form2 = () => {
         <button
           onClick={() => handlesubmit()}
           type="button"
-          class="btn mt-2 btn-primary"
+          className="btn mt-2 btn-primary"
         >
           Submit
         </button>
